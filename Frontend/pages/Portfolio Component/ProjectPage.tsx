@@ -61,7 +61,7 @@ const ProjectPage = () => {
                                 <h1 className="text-stone-500  text-sm w-20">Tech Stack</h1>
                                 <div className="flex gap-1">
                                     {project1.tech_stack.map((stack) => (
-                                        <h1 className="text-stone-900 text-sm font-medium border border-stone-300 bg-stone-200 px-2 rounded-lg">{stack}</h1>
+                                        <h1 className="text-stone-500 text-xs font-medium border border-stone-300 bg-stone-200 px-2 rounded-lg">{stack}</h1>
                                     ))}
                                 </div>
                                 
