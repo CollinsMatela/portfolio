@@ -1,6 +1,7 @@
-import { ChevronsLeftRight } from "lucide-react"
+import { ArrowDown, ChevronsLeftRight, MoveDown } from "lucide-react"
 import My1x1 from "../../src/assets/1x1_Generated.png"
 import reactLogo from "../../src/assets/react.svg"
+import Github2026Nov from "../../src/assets/Github2026Nov.png"
 const AboutPage = () => {
 
     interface UserInfo {
@@ -84,9 +85,20 @@ let softSkills: SoftSkill[] = [
 
     return(
         <>
-        <section className="bg-stone-50 min-h-screen w-full justify-center items-center flex flex-col gap-2 py-20">
+        <section className="bg-stone-50 min-h-screen w-full justify-center items-center flex flex-col gap-2 py-20"
+        id="about">
+
+            <div className="justify-center items-center flex flex-col gap-3 mb-10">
+                    <h1 className="text-xs font-semibold text-stone-600 uppercase">Learn about me</h1>
+                    <h1 className="text-5xl font-bold text-stone-800 uppercase">Let me introduce myself</h1>
+                    <p className="w-120 text-stone-500 text-xs text-center">A glimpse into who I am, my journey as an aspiring web developer,
+        the skills I've developed, and my passion for building meaningful
+        digital experiences.</p>
+                </div>
             
             <div className="h-90 w-4xl justify-start items-start flex gap-2">
+
+                
                 <div className="w-1/3 h-full rounded-lg border border-stone-300 p-2 bg-white">
                     <img src={My1x1} className="w-full h-full object-cover rounded-lg" />
                 </div>
@@ -156,8 +168,29 @@ let softSkills: SoftSkill[] = [
                         </div>
                     ))}
                     </div> 
-                </div>  
+                </div>
             </div>
+
+            <div className="w-4xl border border-stone-300 rounded-lg bg-white p-2">
+               <div className="justify-start items-center flex gap-2 mb-2">
+                    <ChevronsLeftRight size={15} className="text-stone-500"/>
+                    <div>
+                     <h1 className="text-stone-900 font-semibold uppercase">Github Contributions</h1>
+                    <h1 className="text-stone-500 font-semibold text-[11px] uppercase">[Coding Consistency | Commit History | Development Progress]</h1>   
+                    </div>
+                    
+                </div>
+
+                <div className="w-full p-2 animate-pulse">
+                    <img src={Github2026Nov} className="object-contain h-full w-full" /> 
+                </div>
+            </div>
+
+            <a className="h-fit w-fit justify-center items-center flex flex-col mt-10 animate-pulse cursor-pointer"
+            href="#projects">
+                <h1 className="text-sm text-stone-500">View Project</h1>
+                <MoveDown size={15} className="text-stone-500"/>
+            </a>
 
         </section>
         </>

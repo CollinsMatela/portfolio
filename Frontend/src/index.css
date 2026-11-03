@@ -1,4 +1,7 @@
 @import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -18,4 +21,7 @@ body {
 
 .animate-scroll {
   animation: scroll 25s linear infinite;
+}
+.font-bodoni {
+  font-family: 'Bodoni Moda';
 }

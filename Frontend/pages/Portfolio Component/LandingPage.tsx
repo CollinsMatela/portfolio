@@ -1,29 +1,68 @@
-import { ArrowDownToLine } from "lucide-react"
-import My1x1 from "../../src/assets/1x1_Generated.png"
+import { ArrowUpRight, Download, FileDown } from "lucide-react"
+import profilepic from "../../src/assets/1x1NoBg.png"
 const LandingPage = () => {
+    interface Name {
+        letter: string
+    }
+    let name: Name[] = [
+        {letter: 'C'},
+        {letter: 'O'},
+        {letter: 'L'},
+        {letter: 'L'},
+        {letter: 'I'},
+        {letter: 'N'},
+        {letter: 'S'},
+        {letter: 'M'},
+        {letter: 'A'},
+        {letter: 'T'},
+        {letter: 'E'},
+        {letter: 'L'},
+        {letter: 'A'},
+
+    ]
     return (
         <>
-        <section className="h-screen w-full flex bg-white px-20">
-            <div className="flex flex-col items-start justify-center h-full bg-amber-40 w-1/2 gap-1.5">
-                <h1 className="text-stone-600 font-semibold text-xs px-4 py-2 bg-stone-100 rounded-full border-2 border-stone-200 justify-center items-center flex gap-2">
-                    <span className="text-green-500 font-bold">•</span>Currently a 4th year BSIT Student</h1>
-                <h1 className="text-stone-900 text-6xl font-bold">COLLINS MATELA</h1>
-                <h1 className="text-stone-900 text-2xl font-bold">Aspiring Full-Stack Developer</h1>
-                <p className="text-stone-600 text-sm w-100">I build modern, responsive, and user-friendly web applications with a focus on creating practical solutions to real-world problems. Passionate about learning new technologies, solving problems, and turning ideas into functional digital experiences.</p>
-                <div>
-                    <button className="bg-stone-900 hover:bg-stone-700 text-white py-2 px-4 rounded-lg shadow-sm mt-4 justify-center items-center gap-2 flex cursor-pointer">
-                        <ArrowDownToLine size={15}/>
-                        <h1 className="text-sm text-white">Download CV</h1>
+        <section className="relative h-screen w-full flex bg-stone-50 justify-center items-center"
+        id="home">
+            
+
+            <div className="w-full overflow-hidden">
+                <div className="flex w-max animate-scroll hover:[animation-play-state:paused] ">
+                {[...name, ...name, ...name].map((name, index) => (
+                    <div key={index} className="mx-6 flex items-center">
+                        <h1 className="text-stone-200 text-[600px] font-extrabold">{name.letter}</h1>
+                    </div>
+                ))}  
+                </div> 
+            </div> 
+            <div className="absolute inset-0 bg-linear-to-t from-stone-50 to-transparent"></div>
+
+            <div className="absolute w-fit justify-center items-center flex flex-col gap-2">
+                  <h1 className="text-stone-500">4th Year College Student</h1>
+                  <h1 className="text-stone-900 font-extrabold font-bodoni text-9xl">COLLINS</h1>
+                  <h1 className="text-stone-900 font-extrabold font-bodoni text-9xl">MATELA</h1>
+                  <p className="w-120 text-center text-[11px] text-stone-500 uppercase">
+                    Aspiring Full-Stack Developer passionate about building modern,
+                    functional, and user-friendly web applications. I enjoy turning
+                    ideas into practical digital solutions through continuous learning
+                    and hands-on development.
+                  </p>
+                  <div className="flex gap-1">
+                     <button className="p-2 bg-stone-800 border border-stone-300 rounded-lg justify-center items-center flex gap-2 cursor-pointer hover:bg-stone-950 transition"
+                     onClick={() => alert('Not Yet Available')}>
+                        <Download size={15} className="text-white"/>
+                        <h1 className="text-white text-xs">Download Resume</h1>
                     </button>
-                </div>
+                    <a className="p-2 bg-white border border-stone-300 rounded-lg justify-center items-center flex gap-2 cursor-pointer hover:bg-stone-200 transition"
+                    href="#about">
+                        <ArrowUpRight size={15} className="text-stone-900"/>
+                    <h1 className="text-stone-800 text-xs">Learn More</h1>
+                  </a>
+                  </div>
+                  
             </div>
 
-            <div className="flex flex-col items-center justify-center h-full bg-amber-40 w-1/2">
-                <div className="h-120 w-100 rounded-3xl shadow-stone-300 shadow-2xl overflow-hidden">
-                   <img src={My1x1} alt="Profile Image" className="h-full w-full object-cover rounded-3xl"/> 
-                </div>
-                
-            </div>
+            
         </section>
         </>
     )
