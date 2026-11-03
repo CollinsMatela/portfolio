@@ -1,4 +1,4 @@
-import { AppWindow, ChevronDown, ChevronsLeftRight } from "lucide-react"
+import { ChevronsLeftRight } from "lucide-react"
 import ProjectImage1 from "../../src/assets/ProjectImage1.png"
 const ProjectPage = () => {
 
