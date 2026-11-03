@@ -1,5 +1,5 @@
-import { ArrowUpRight, Download, FileDown } from "lucide-react"
-import profilepic from "../../src/assets/1x1NoBg.png"
+import { ArrowUpRight, Download } from "lucide-react"
+
 const LandingPage = () => {
     interface Name {
         letter: string
