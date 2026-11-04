@@ -18,7 +18,7 @@ const NavigationBar = () => {
         <header className="fixed top-0 z-20 w-full justify-center items-center flex bg-white/50 backdrop-blur-[2px] border-b border-stone-200">
             <div className="h-16 w-4xl justify-between items-center flex gap-2">
                 <div className="justify-center items-center flex gap-2">
-                    <h1 className="text-stone-900 text-md font-bold lowercase">@Akosicllns</h1>
+                    <h1 className="text-stone-900 text-md font-bold uppercase">CM</h1>
                 </div>
 
 
