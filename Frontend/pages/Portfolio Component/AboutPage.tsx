@@ -17,7 +17,7 @@ const AboutPage = () => {
   description: string;
 }
 
-let softSkills: SoftSkill[] = [
+const softSkills: SoftSkill[] = [
   {
     name: "Problem-Solving",
     description: "Finding effective solutions to challenges.",
@@ -85,35 +85,35 @@ let softSkills: SoftSkill[] = [
 
     return(
         <>
-        <section className="bg-stone-50 min-h-screen w-full justify-center items-center flex flex-col gap-2 py-20"
+        <section className="bg-stone-50 min-h-screen w-full justify-center items-center flex flex-col gap-2 py-20 px-4"
         id="about">
 
-            <div className="justify-center items-center flex flex-col gap-3 mb-10">
+            <div className="justify-center items-center flex flex-col gap-3 mb-10 px-2">
                     <h1 className="text-xs font-semibold text-stone-600 uppercase">Learn about me</h1>
-                    <h1 className="text-5xl font-bold text-stone-800 uppercase">Let me introduce myself</h1>
-                    <p className="w-120 text-stone-500 text-xs text-center">A glimpse into who I am, my journey as an aspiring web developer,
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-stone-800 uppercase text-center">Let me introduce myself</h1>
+                    <p className="w-full max-w-120 text-stone-500 text-xs text-center">A glimpse into who I am, my journey as an aspiring web developer,
         the skills I've developed, and my passion for building meaningful
         digital experiences.</p>
                 </div>
             
-            <div className="h-90 w-4xl justify-start items-start flex gap-2">
+            <div className="w-full max-w-4xl h-auto md:h-90 justify-start items-start flex flex-col md:flex-row gap-2">
 
                 
-                <div className="w-1/3 h-full rounded-lg border border-stone-300 p-2 bg-white">
+                <div className="w-full md:w-1/3 h-64 md:h-full rounded-lg border border-stone-300 p-2 bg-white">
                     <img src={My1x1} className="w-full h-full object-cover rounded-lg" />
                 </div>
                 
-                <div className="shrink-0 h-full w-2/3 rounded-lg border border-stone-300 px-4 flex flex-col gap-2 bg-white">
+                <div className="shrink-0 w-full md:w-2/3 md:h-full rounded-lg border border-stone-300 px-4 py-2 flex flex-col gap-2 bg-white">
                     <div className="justify-start items-center flex gap-2 border-b border-stone-300 py-2">
                         <ChevronsLeftRight size={15} className="text-stone-500"/>
                         <h1 className="text-stone-900 font-semibold">Me</h1>
                     </div>
 
-                    <div className="shrink-0 grid grid-cols-2 gap-2 border-b border-stone-300 py-2">
+                    <div className="shrink-0 grid grid-cols-1 sm:grid-cols-2 gap-2 border-b border-stone-300 py-2">
                         {user_info.map((info) => (
                             <div className="flex justify-start items-start gap-4 w-full">
-                                  <h1 className="text-stone-500 font-semibold text-sm w-12">{info.label}</h1>
-                                  <h1 className="text-stone-900 text-sm">{info.value}</h1>
+                                  <h1 className="text-stone-500 font-semibold text-sm w-12 shrink-0">{info.label}</h1>
+                                  <h1 className="text-stone-900 text-sm break-words">{info.value}</h1>
                             </div>
                         ))}
                     </div>
@@ -128,7 +128,7 @@ let softSkills: SoftSkill[] = [
             </div>
 
             
-            <div className="w-4xl border border-stone-300 rounded-lg bg-white p-2">
+            <div className="w-full max-w-4xl border border-stone-300 rounded-lg bg-white p-2">
                <div className="justify-start items-center flex gap-2 mb-2">
                     <ChevronsLeftRight size={15} className="text-stone-500"/>
                     <div>
@@ -149,7 +149,7 @@ let softSkills: SoftSkill[] = [
                     </div> 
                 </div>  
             </div>
-            <div className="w-4xl border border-stone-300 rounded-lg bg-white p-2">
+            <div className="w-full max-w-4xl border border-stone-300 rounded-lg bg-white p-2">
                <div className="justify-start items-center flex gap-2 mb-2">
                     <ChevronsLeftRight size={15} className="text-stone-500"/>
                     <div>
@@ -160,7 +160,7 @@ let softSkills: SoftSkill[] = [
                 </div>
 
                 <div className="w-full">
-                    <div className="w-full gap-1 grid grid-cols-4">
+                    <div className="w-full gap-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                      {softSkills.map((skill) => (
                         <div key={skill.name} className="w-full flex flex-col items-center gap-2 rounded-lg border border-stone-300 bg-white py-2 px-4 text-stone-600 transition hover:text-stone-900">
                             <h1 className="text-stone-900 text-sm">{skill.name}</h1>
@@ -171,7 +171,7 @@ let softSkills: SoftSkill[] = [
                 </div>
             </div>
 
-            <div className="w-4xl border border-stone-300 rounded-lg bg-white p-2">
+            <div className="w-full max-w-4xl border border-stone-300 rounded-lg bg-white p-2">
                <div className="justify-start items-center flex gap-2 mb-2">
                     <ChevronsLeftRight size={15} className="text-stone-500"/>
                     <div>

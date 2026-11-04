@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     background-color: #ffffff;

@@ -8,7 +8,7 @@ const ProjectPage = () => {
         my_role: string,
         tech_stack: string[],
     }
-    let project1: Project = {
+    const project1: Project = {
         project_name: 'Web-Based Library Management System',
         project_type: 'Capstone Project | Client Based',
         my_role: 'Lead & Fullstack Developer',
@@ -18,15 +18,15 @@ const ProjectPage = () => {
     
     return(
         <>
-        <section className="min-h-screen w-full bg-stone-50 justify-center items-center flex flex-col py-20"
+        <section className="min-h-screen w-full bg-stone-50 justify-center items-center flex flex-col py-20 px-4"
         id="projects">
 
-                <div className="justify-center items-center flex flex-col gap-3 mb-10">
+                <div className="justify-center items-center flex flex-col gap-3 mb-10 px-2">
                     <h1 className="text-xs font-semibold text-stone-600 uppercase">Featured Projects</h1>
-                    <h1 className="text-5xl font-bold text-stone-800 uppercase">A Collection of My Work</h1>
-                    <p className="w-120 text-stone-500 text-xs text-center">A showcase of my development journey, featuring web applications and projects built through continuous learning and hands-on experience.</p>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-stone-800 uppercase text-center">A Collection of My Work</h1>
+                    <p className="w-full max-w-120 text-stone-500 text-xs text-center">A showcase of my development journey, featuring web applications and projects built through continuous learning and hands-on experience.</p>
                 </div>
-                <div className="w-4xl flex flex-col gap-2">
+                <div className="w-full max-w-4xl flex flex-col gap-2">
 
                     <div className="w-full border border-stone-300 p-2 rounded-lg bg-white">
                         <img src={ProjectImage1} alt="Project Image 1" className="w-full h-full object-cover rounded-lg border border-stone-300"/>
@@ -40,28 +40,28 @@ const ProjectPage = () => {
                             </div>
                           
 
-                          <div className="w-full grid grid-cols-2 gap-2 border-b border-stone-300 pb-4 bg-white">
+                          <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-2 border-b border-stone-300 pb-4 bg-white">
 
-                               <div className="w-full flex gap-2">
-                                <h1 className="text-stone-500  text-sm w-20">Project Name</h1>
-                                <h1 className="text-stone-900 text-sm">{project1.project_name}</h1>
+                               <div className="w-full flex flex-wrap items-start gap-2">
+                                <h1 className="text-stone-500 text-sm w-20 shrink-0">Project Name</h1>
+                                <h1 className="text-stone-900 text-sm break-words">{project1.project_name}</h1>
                                </div>
 
-                               <div className="w-full flex gap-2">
-                                <h1 className="text-stone-500  text-sm w-20">My Role</h1>
-                                <h1 className="text-stone-900 text-sm">{project1.my_role}</h1>
+                               <div className="w-full flex flex-wrap items-start gap-2">
+                                <h1 className="text-stone-500 text-sm w-20 shrink-0">My Role</h1>
+                                <h1 className="text-stone-900 text-sm break-words">{project1.my_role}</h1>
                                </div>
 
-                               <div className="w-full flex gap-2">
-                                <h1 className="text-stone-500  text-sm w-20">Project Type</h1>
-                                <h1 className="text-stone-900 text-sm">{project1.project_type}</h1>
+                               <div className="w-full flex flex-wrap items-start gap-2">
+                                <h1 className="text-stone-500 text-sm w-20 shrink-0">Project Type</h1>
+                                <h1 className="text-stone-900 text-sm break-words">{project1.project_type}</h1>
                                </div>
 
-                               <div className="w-full flex gap-2">
-                                <h1 className="text-stone-500  text-sm w-20">Tech Stack</h1>
-                                <div className="flex gap-1">
+                               <div className="w-full flex flex-wrap items-start gap-2">
+                                <h1 className="text-stone-500 text-sm w-20 shrink-0">Tech Stack</h1>
+                                <div className="flex flex-wrap gap-1">
                                     {project1.tech_stack.map((stack) => (
-                                        <h1 className="text-stone-500 text-xs font-medium border border-stone-300 bg-stone-200 px-2 rounded-lg">{stack}</h1>
+                                        <h1 key={stack} className="text-stone-500 text-xs font-medium border border-stone-300 bg-stone-200 px-2 rounded-lg">{stack}</h1>
                                     ))}
                                 </div>
                                 
