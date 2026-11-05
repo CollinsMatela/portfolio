@@ -50,11 +50,13 @@ const LandingPage = () => {
                     and hands-on development.
                   </p>
                   <div className="flex flex-wrap justify-center gap-2">
-                     <button className="p-2 bg-stone-800 border border-stone-300 rounded-lg justify-center items-center flex gap-2 cursor-pointer hover:bg-stone-950 transition"
-                     onClick={() => alert('Not Yet Available')}>
+                     <a className="p-2 bg-stone-800 border border-stone-300 rounded-lg justify-center items-center flex gap-2 cursor-pointer hover:bg-stone-950 transition"
+                     href="../../src/assets/Collins_Resume.pdf"
+                     target="_blank">
                         <Download size={15} className="text-white"/>
-                        <h1 className="text-white text-xs">Download Resume</h1>
-                    </button>
+                        <h1 className="text-white text-xs"
+                        >Download Resume</h1>
+                    </a>
                     <a className="p-2 bg-white border border-stone-300 rounded-lg justify-center items-center flex gap-2 cursor-pointer hover:bg-stone-200 transition"
                     href="#about">
                         <ArrowUpRight size={15} className="text-stone-900"/>
