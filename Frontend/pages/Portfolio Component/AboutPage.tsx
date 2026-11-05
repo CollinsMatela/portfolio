@@ -1,7 +1,6 @@
 import { ChevronsLeftRight, MoveDown } from "lucide-react"
 import My1x1 from "../../src/assets/1x1_Generated.png"
 import reactLogo from "../../src/assets/react.svg"
-import Github2026Nov from "../../src/assets/Github2026Nov.png"
 import {GitHubCalendar} from 'react-github-calendar';
 import { FaGithub } from "react-icons/fa";
 const AboutPage = () => {
