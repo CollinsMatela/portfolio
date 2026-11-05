@@ -2,6 +2,8 @@ import { ChevronsLeftRight, MoveDown } from "lucide-react"
 import My1x1 from "../../src/assets/1x1_Generated.png"
 import reactLogo from "../../src/assets/react.svg"
 import Github2026Nov from "../../src/assets/Github2026Nov.png"
+import {GitHubCalendar} from 'react-github-calendar';
+import { FaGithub } from "react-icons/fa";
 const AboutPage = () => {
 
     interface UserInfo {
@@ -173,16 +175,20 @@ const softSkills: SoftSkill[] = [
 
             <div className="w-full max-w-4xl border border-stone-300 rounded-lg bg-white p-2">
                <div className="justify-start items-center flex gap-2 mb-2">
-                    <ChevronsLeftRight size={15} className="text-stone-500"/>
+                    <FaGithub size={15} className="text-stone-500"/>
                     <div>
-                     <h1 className="text-stone-900 font-semibold uppercase">Github Contributions</h1>
-                    <h1 className="text-stone-500 font-semibold text-[11px] uppercase">[Coding Consistency | Commit History | Development Progress]</h1>   
+                     <h1 className="text-stone-900 font-semibold uppercase">Github Avtivity</h1>
+                    <h1 className="text-stone-500 font-semibold text-[11px] uppercase">A visual representation of my coding journey
+            and contributions.</h1>   
                     </div>
                     
                 </div>
 
-                <div className="w-full p-2 animate-pulse">
-                    <img src={Github2026Nov} className="object-contain h-full w-full" /> 
+                <div className="w-full p-2">
+                    <GitHubCalendar 
+                    username="CollinsMatela"
+                    
+                    />
                 </div>
             </div>
 
