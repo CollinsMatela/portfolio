@@ -68,7 +68,7 @@ const LandingPage = () => {
 
             <div className="absolute translate-x-10 translate-y-50 sm:translate-x-60 md:translate-x-70 lg:translate-x-80 sm:translate-y-0 rotate-0 sm:rotate-12 h-40 w-30 rounded-xl 
             justify-center items-center flex bg-white/50 border border-stone-300  shadow-xl backdrop-blur-xs p-2
-            hover:rotate-0 hover:z-20 hover:scale-125 transition-transform duration-300 animate-breathing-right">
+            hover:rotate-0 hover:z-20 hover:scale-125 transition-transform duration-300 ">
                  <div className="relative h-full w-full">
                     <div className="relative bg-blue-400 h-1/2 w-full rounded-t-lg">
                           <div className="absolute inset-0 bg-linear-to-t from-stone-50 to-transparent"></div>
@@ -91,7 +91,7 @@ const LandingPage = () => {
 
             <div className="absolute -translate-x-10 translate-y-50 sm:-translate-x-60 md:-translate-x-70 lg:-translate-x-80 sm:translate-y-0 rotate-0 sm:-rotate-12 h-40 w-30 rounded-xl 
             justify-center items-center flex bg-stone-800/50 border border-stone-600  shadow-xl backdrop-blur-xs p-2
-            hover:rotate-0 hover:z-20 hover:scale-125 transition-transform duration-300 animate-breathing-left">
+            hover:rotate-0 hover:z-20 hover:scale-125 transition-transform duration-300 ">
                  <div className="relative h-full w-full">
                     <div className="relative bg-stone-900 h-1/2 w-full rounded-t-lg border-b border-stone-600">
                           <div className="absolute inset-0 bg-transparent"></div>
