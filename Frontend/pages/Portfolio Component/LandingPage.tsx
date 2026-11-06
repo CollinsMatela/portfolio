@@ -39,7 +39,7 @@ const LandingPage = () => {
             </div> 
             <div className="absolute inset-0 bg-linear-to-t from-stone-50 to-transparent"></div>
 
-            <div className="absolute z-10 w-full max-w-fit px-6 justify-center items-center flex flex-col gap-2 text-center">
+            <div className="absolute z-10 w-full max-w-fit px-6 justify-center items-center flex flex-col gap-2 text-center pointer-events-none">
                   <h1 className="text-stone-500 text-[11px] sm:text-sm">4th Year College Student</h1>
                   <h1 className="text-stone-900 font-extrabold font-bodoni text-5xl sm:text-7xl md:text-8xl lg:text-9xl">COLLINS</h1>
                   <h1 className="text-stone-900 font-extrabold font-bodoni text-5xl sm:text-7xl md:text-8xl lg:text-9xl">MATELA</h1>
