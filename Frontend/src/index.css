@@ -31,6 +31,42 @@ body {
   font-family: 'Bodoni Moda';
 }
 
+@keyframes breathing-left {
+    0%, 100% {
+        translate: -20 -20;
+        rotate: -12deg;
+        scale: 1;
+    }
+
+    50% {
+        translate: -20 10px;
+        rotate: -15deg;
+        scale: 1.05;
+    }
+}
+
+.animate-breathing-left {
+    animation: breathing-left 4s ease-in-out infinite;
+}
+
+@keyframes breathing-right {
+    0%, 100% {
+        translate: 20 20;
+        rotate: 12deg;
+        scale: 1;
+    }
+
+    50% {
+        translate: 20 -10px;
+        rotate: 15deg;
+        scale: 1.05;
+    }
+}
+
+.animate-breathing-right {
+    animation: breathing-right 4s ease-in-out infinite;
+}
+
 @keyframes loading-opacity {
     0% {
         opacity: 100%;
