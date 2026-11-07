@@ -49,7 +49,7 @@ const LandingPage = () => {
                     ideas into practical digital solutions through continuous learning
                     and hands-on development.
                   </p>
-                  <div className="flex flex-wrap justify-center gap-2">
+                  <div className="flex flex-wrap justify-center gap-2 pointer-events-auto">
                      <a className="p-2 bg-stone-800 border border-stone-300 rounded-lg justify-center items-center flex gap-2 cursor-pointer hover:bg-stone-950 transition"
                      href="../../src/assets/Collins_Resume.pdf"
                      target="_blank">
@@ -65,6 +65,9 @@ const LandingPage = () => {
                   </div>
                   
             </div>
+            
+            
+            
 
             <div className="absolute translate-x-10 translate-y-50 sm:translate-x-60 md:translate-x-70 lg:translate-x-80 sm:translate-y-0 rotate-0 sm:rotate-12 h-40 w-30 rounded-xl 
             justify-center items-center flex bg-white/50 border border-stone-300  shadow-xl backdrop-blur-xs p-2
